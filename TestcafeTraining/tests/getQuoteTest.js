@@ -9,7 +9,6 @@ fixture("Test the getQuote for Home")
 
     .page("https://customer.axa.co.uk/home/get-quote");
     test('fill details',async t =>{
-       // if (await t.expect(yourDetails.acceptCookies.exists).ok()){
         await t.click(yourDetails.acceptCookies)
         await t.typeText(yourDetails.houseNum,'1 Barley House',{paste:true ,replace:true})
         await t.typeText(yourDetails.postcode,'KT11 1HY')
